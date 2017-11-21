@@ -15,18 +15,18 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Label extendStyle={'colorLabel'}>
-          Test 1: <Checkbox />
+        <Label extendStyle={'colorLabel'} content={'Test 1: '}>
+          <Checkbox />
         </Label>
-        <Label>
-          Test 2: <Checkbox checked />
+        <Label content={'Test 2: '}>
+          <Checkbox checked />
         </Label>
-        <Label>
-          Test 3: <Checkbox checked />
+        <Label content={'Test 3:'}>
+          <Checkbox checked />
         </Label>
 
         <Checkbox />
-        <Label>Label test</Label>
+        <Label content={'Test alone'} />
       </div>
     );
   }

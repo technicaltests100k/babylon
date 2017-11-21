@@ -6,6 +6,29 @@ exports[`<Label /> should render Label with all the correct props 1`] = `
   for="form1"
   form="form2"
 >
-  Some beaufitl text
+  a super interesting text
+</label>
+`;
+
+exports[`<Label /> should render Label with the checkbox component 1`] = `
+<label
+  class="label classToExtend"
+  for="form1"
+  form="form2"
+>
+  a super interesting text
+  <div
+    class="checkbox  "
+  >
+    <svg
+      class="checkboxIcon"
+    >
+      <use
+        href="icons.svg#icon-checkmark"
+      >
+        
+      </use>
+    </svg>
+  </div>
 </label>
 `;

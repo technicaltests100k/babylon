@@ -12,7 +12,9 @@ export default class Label extends Component {
   static propTypes = {
     extendStyle: PropTypes.string,
     htmlFor: PropTypes.string,
-    form: PropTypes.string
+    form: PropTypes.string,
+    content: PropTypes.string.isRequired,
+    children: PropTypes.element
   };
 
   /**
@@ -20,10 +22,11 @@ export default class Label extends Component {
   * @return {ReactElement} markup
   */
   render() {
-    const { htmlFor, form, extendStyle } = this.props;
+    const { htmlFor, form, extendStyle, content, children } = this.props;
     return (
       <label className={`label ${extendStyle}`} htmlFor={htmlFor} form={form}>
-        {this.props.children}
+        {content}
+        {children}
       </label>
     );
   }
