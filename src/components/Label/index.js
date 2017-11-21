@@ -5,38 +5,26 @@ import './style.css';
 /**
   *	Label React Type component.
   */
-export class Label extends Component {
+export default class Label extends Component {
   /**
   *	Props implementation.
   */
   static propTypes = {
-    formFor: PropTypes.string,
+    extendStyle: PropTypes.string,
+    htmlFor: PropTypes.string,
     form: PropTypes.string
   };
-  /**
-  * Implements defaultProps().
-  */
-  static defaultProps = {};
-  /**
-  *	Label contructor.
-  * @param {object} props to constructor.
-  *	@constructor
-  */
-  constructor(props) {
-    super(props);
-  }
+
   /**
   * Render
   * @return {ReactElement} markup
   */
   render() {
-    const { formFor, form } = this.props;
+    const { htmlFor, form, extendStyle } = this.props;
     return (
-      <label className={'label'} for={formFor} form={form}>
+      <label className={`label ${extendStyle}`} htmlFor={htmlFor} form={form}>
         {this.props.children}
       </label>
     );
   }
 }
-
-export default Label;
