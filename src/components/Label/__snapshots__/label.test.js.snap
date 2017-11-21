@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label /> should render Label with all the correct props 1`] = `
+<label
+  class="label classToExtend"
+  for="form1"
+  form="form2"
+>
+  Some beaufitl text
+</label>
+`;
