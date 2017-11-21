@@ -1,0 +1,13 @@
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-style: inset;
+}
+
+.checkbox:after {
+  content: '';
+}
+
+.checkbox.checked:after {
+  content: 'V';
+}
