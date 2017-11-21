@@ -15,18 +15,21 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Label extendStyle={'colorLabel'} content={'Test 1: '}>
+        <Label content={'Label test 1'}>
           <Checkbox />
         </Label>
-        <Label content={'Test 2: '}>
+        <Label content={'Label test 2'}>
+          <Checkbox />
+        </Label>
+        <Label content={'Label already checked'}>
           <Checkbox checked />
         </Label>
-        <Label content={'Test 3:'}>
-          <Checkbox checked />
-        </Label>
-
+        <Label
+          extendStyle={'colorLabel'}
+          content={'I am an alone red Label :('}
+        />
+        <p>This is an alone Checkbox :(, but you can still click me! :)</p>
         <Checkbox />
-        <Label content={'Test alone'} />
       </div>
     );
   }
