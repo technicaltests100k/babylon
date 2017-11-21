@@ -9,15 +9,16 @@
 .checkbox:hover {
   cursor: pointer;
 }
-.checkbox .icon {
+
+.checkbox .checkboxIcon {
   display: none;
 }
 
-.checkbox.checked .icon {
+.checkbox.checked .checkboxIcon {
   display: inherit;
 }
 
-.icon {
+.checkboxIcon {
   width: 20px;
   height: 20px;
   fill: green;
