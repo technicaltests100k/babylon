@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './style.css';
 import icon from '../../icons.svg';
 
-class Checkbox extends Component {
+export default class Checkbox extends Component {
   /**
   *	Props implementation.
   */
@@ -20,6 +20,10 @@ class Checkbox extends Component {
     extendStyle: ''
   };
 
+  /**
+   * The state of isChecked can be define by a the checked prop. If not provided, it uses the default.
+   * @param {Object} props 
+   */
   constructor(props) {
     super(props);
     this.state = {
@@ -27,6 +31,9 @@ class Checkbox extends Component {
     };
   }
 
+  /**
+   * It toggles the checkbox's state when onClick is fired.
+   */
   handleOnClick = () => {
     this.setState({
       isChecked: !this.state.isChecked
@@ -35,18 +42,14 @@ class Checkbox extends Component {
 
   render() {
     const { extendStyle } = this.props;
-    const style = this.state.isChecked ? 'checked' : '';
     return (
-      <div
-        className={`checkbox ${style} ${extendStyle}`}
-        onClick={this.handleOnClick}
-      >
-        <svg className={'checkboxIcon'}>
-          <use xlinkHref={`${icon}#icon-checkmark`} />
-        </svg>
+      <div className={`checkbox ${extendStyle}`} onClick={this.handleOnClick}>
+        {this.state.isChecked ? (
+          <svg className={'checkboxIcon'}>
+            <use xlinkHref={`${icon}#icon-checkmark`} />
+          </svg>
+        ) : null}
       </div>
     );
   }
 }
-
-export default Checkbox;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> should render Checkbox and show the icon 1`] = `
+<div
+  class="checkbox classToExtend"
+>
+  <svg
+    class="checkboxIcon"
+  >
+    <use
+      href="icons.svg#icon-checkmark"
+    >
+      
+    </use>
+  </svg>
+</div>
+`;
+
+exports[`<Checkbox /> should render Checkbox with all the correct props and no icon 1`] = `
+<div
+  class="checkbox classToExtend"
+>
+  
+</div>
+`;

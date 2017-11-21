@@ -10,14 +10,6 @@
   cursor: pointer;
 }
 
-.checkbox .checkboxIcon {
-  display: none;
-}
-
-.checkbox.checked .checkboxIcon {
-  display: inherit;
-}
-
 .checkboxIcon {
   width: 20px;
   height: 20px;

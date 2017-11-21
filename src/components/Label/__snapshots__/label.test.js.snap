@@ -18,17 +18,9 @@ exports[`<Label /> should render Label with the checkbox component 1`] = `
 >
   a super interesting text
   <div
-    class="checkbox  "
+    class="checkbox "
   >
-    <svg
-      class="checkboxIcon"
-    >
-      <use
-        href="icons.svg#icon-checkmark"
-      >
-        
-      </use>
-    </svg>
+    
   </div>
 </label>
 `;
