@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 import icon from '../../icons.svg';
 
-export default class Checkbox extends Component {
+export default class Checkbox extends PureComponent {
   /**
   *	Props implementation.
   */

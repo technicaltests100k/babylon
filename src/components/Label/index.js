@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
 /**
   *	Label React Type component.
   */
-export default class Label extends Component {
+export default class Label extends PureComponent {
   /**
   *	Props implementation.
   */
